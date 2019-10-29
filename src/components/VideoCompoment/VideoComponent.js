@@ -4,8 +4,17 @@ import classes from './VideoComponent.module.css'
 
 
 const VideoComponent = () => {
+
+   const divStyle = {
+      "position": "absolute",
+      "top": "0",
+      "width": "100%",
+      "height": "100%",
+      "z-index": "-1000",
+   }
+
    return (
-      <div className={classes.videocontainer} >
+      <div style={divStyle} >
          <video autoPlay={true} className={classes.video} muted loop>
             <source src={video} type="video/mp4"></source>
          </video>
