@@ -1,8 +1,19 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   /* box-sizing: border-box; force actual height = height actual wedth = width   */
+   box-sizing: inherit;
+   /* Box-sizing is not an inherited value by default and therefore we need to explicitly set it if we want to use it for all elements. The border-box value is set in the body already */
+}
+
+
 body {
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +21,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.fade-appear,
+.face-enter{
+   opacity:0;
+   z-index:1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active{
+   opacity:1;
+   transition:opacity 300ms linear 150ms;
+}
+
+.fade-exit{
+   opacity:1
+}
+
+.fade-exit.fade-exit-active{
+   opacity:0;
+   transition: opacity 150ms linear;
 }

@@ -1,0 +1,17 @@
+.Toolbar{
+   height:7vh;
+   position: relative;
+   background-color: rgb(53, 53, 53);
+
+   /* display:flex;
+   justify-content: space-around; */
+   align-items:center;
+   padding: 0 20px;
+}  
+
+
+@media(max-width: 500px){
+   .Toolbar{
+      height:10vh;
+}}
+

@@ -1,0 +1,43 @@
+
+
+.footer{
+position: relative;
+height:10vh;
+background-color: rgb(53, 53, 53);
+width:100%
+
+}
+
+.footer ul {
+height:80%;
+list-style: none;
+display:flex;
+justify-content: space-around;
+align-items:center;
+font-size: 1.3rem;
+
+}
+
+
+.footer li a{
+   border-bottom: 1px solid white;
+}
+
+.footer a {
+   color:white;
+   text-decoration: none;;
+}
+
+.footer p{
+   position:absolute;
+   top:80%;
+   left:50%;
+   transform:translate(-50%,-50%) ;
+   color:white;
+}
+
+@media(max-width: 500px){
+   .footer{
+      height:15vh;
+}}
+

@@ -1,0 +1,45 @@
+
+
+
+.mainpage{
+   height:93vh;
+   position: relative;
+}
+
+
+
+.maindiv{
+   width:80vw;
+   height: 60vh; 
+   margin: 10rem auto; 
+   color:white;
+}
+
+.maindiv video{
+
+
+}
+
+
+
+h1{
+
+   font-size: 10rem;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 60vh;
+   font-weight: 700;
+   
+}
+
+
+
+@media only screen and (max-width:600px) {
+   h1{
+
+      font-size: 5rem;
+
+   }
+};
+
+

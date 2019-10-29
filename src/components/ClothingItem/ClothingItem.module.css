@@ -1,0 +1,64 @@
+.container {
+   z-index:1;
+   width: -webkit-fill-available;
+   height: -webkit-fill-available;
+   margin:0 auto;
+   position:relative;
+   transition: all .1s linear;
+   transform:scale(.992); 
+   color:rgb(53, 53, 53);
+   font-size: 1.2rem;
+   animation: fadein .5s linear .6s;
+   animation-fill-mode: forwards;
+   opacity:0;
+}
+
+.container:hover {
+   transform:scale(1.003);
+}
+
+.container img{
+   
+   width:100%;
+   height:auto;
+ 
+}
+
+.name{
+   position:absolute;
+   bottom:1.1rem;
+   left:1.1rem;
+
+}
+
+.price{
+   position:absolute;
+   bottom:1.1rem;
+   right:1.1rem;
+}
+
+@keyframes fadein {
+   0%   {opacity:0}
+   /* 25%  {background-color: yellow;}
+   50%  {background-color: blue;} */
+   100% {opacity:1}
+ }
+ 
+ .drawer{
+    display: block;
+   /* width:100%;
+   height: auto; */
+   position: relative;
+   color:rgb(53, 53, 53);
+   transform:scale(.992); 
+   transition: all .1s linear;
+}
+
+.drawer:hover {
+   transform:scale(1.003);
+}
+
+ .drawer img{
+    width:100%;
+    height:auto;
+ }

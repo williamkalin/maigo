@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Layout from './hoc/Layout/Layout';
+import Mainpage from './containers/Mainpage/Mainpage';
+import BrowseClothes from './containers/BrowseClothes/BrowseClothes';
+import Clothing from './containers/Clothing/Clothing'
+import { connect } from 'react-redux';
+import * as actions from './store/actions/index'
+require('dotenv').config();
 
-function App() {
+
+
+function App(props) {
+
+  const { getNavbarLinks } = props;
+
+  useEffect(() => {
+    getNavbarLinks();
+  }, [getNavbarLinks])
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+
+      <Switch>
+        <Route path="/men/:slug" component={BrowseClothes} />
+        <Route path="/women/:slug" component={BrowseClothes} />
+        <Route path="/clothing/:slug" component={Clothing} />
+        <Route path="/" component={Mainpage} />
+      </Switch>
+
+    </Layout>
   );
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+
+  return {
+    getNavbarLinks: () => dispatch(actions.fetchNavbarLinks())
+  }
+
+}
+
+
+
+
+export default connect(null, mapDispatchToProps)(App);

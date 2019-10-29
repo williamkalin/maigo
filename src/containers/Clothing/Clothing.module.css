@@ -1,0 +1,79 @@
+.container{
+   min-height:93vh;
+  position: relative;
+  
+}
+
+.innercontainer{
+   width:80vw;
+
+   margin: 10rem auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-rows: min-content;
+   grid-gap: 1rem;
+  
+   
+}
+
+.imagecontainer{
+   
+   width: -webkit-fill-available;
+   margin:0 auto;
+
+}
+
+.imagecontainer img {
+   width:100%;
+   height:auto;
+
+}
+
+
+.clothingcontainer{
+display: flex;
+flex-direction: column;
+padding:2.5rem;
+
+ background-color:  rgb(53, 53, 53);
+ color:white;
+}
+
+
+
+.containeritems{
+   margin-top:.5rem;
+}
+
+.h2{
+   font-size: 3rem;
+}
+
+.button{
+   height:3rem;
+   margin-top:2rem;
+   display:flex;
+   align-items: center;
+   cursor: pointer;
+   background-color: grey;
+   border: none;
+   transition: all .3s linear;
+  
+}
+.button:hover{
+   background-color: rgb(216, 216, 216);
+}
+
+.button p{
+   font-size: 1.3rem;
+   padding-left: 1rem;
+}
+
+.button img{
+ 
+   height:100%;
+   width:5rem;
+   padding-left: 1rem;
+   
+   
+}
