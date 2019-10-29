@@ -5,8 +5,8 @@ import classes from './VideoComponent.module.css'
 
 const VideoComponent = () => {
    return (
-      <div className={classes.video} >
-         <video autoPlay={true} muted loop>
+      <div className={classes.videocontainer} >
+         <video autoPlay={true} className={classes.video} muted loop>
             <source src={video} type="video/mp4"></source>
          </video>
       </div>
