@@ -36,7 +36,7 @@ const Clothing = (props) => {
    if (currentClothing) {
       clothingimagedesc = <>
          <div className={classes.imagecontainer}>
-            <img src={`http://localhost:5000/images/${clothingname}`} alt="" />
+            <img src={`https://mighty-atoll-69969.herokuapp.com/images/${clothingname}`} alt="" />
          </div>
          <div className={classes.clothingcontainer}>
             <h2 className={classes.h2}>{currentClothing.name}</h2>
