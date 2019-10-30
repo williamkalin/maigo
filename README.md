@@ -15,6 +15,6 @@ Since the every single part of the website that can/needs to be hosted (MongoDB,
 * Redux
 * Node.js
 
-[Live verison of website](https://maigo.netlify.com/)
+[Live version of website](https://maigo.netlify.com/)
 
 [My personal website](https://williamkalin.netlify.com/)
