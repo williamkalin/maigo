@@ -11,7 +11,8 @@ Since the every single part of the website that can/needs to be hosted (MongoDB,
 
 * MongoDB
 * Express - here is a link to the express backend [maigoAPI](https://williamkalin.netlify.com/)
-* React - state with redux
+* React
+* Redux
 * Node.js
 
  [My personal website](https://williamkalin.netlify.com/)
