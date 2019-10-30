@@ -6,7 +6,7 @@ import BrowseClothes from './containers/BrowseClothes/BrowseClothes';
 import Clothing from './containers/Clothing/Clothing'
 import { connect } from 'react-redux';
 import * as actions from './store/actions/index'
-require('dotenv').config();
+
 
 
 

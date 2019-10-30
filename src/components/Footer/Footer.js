@@ -12,8 +12,6 @@ const Footer = () => {
             <li><a href="/">charity</a></li>
          </ul>
 
-         <p>concept made by William Kalin. You can contact/ find more of my work on www.williamkalin.com</p>
-
       </div>
    )
 }

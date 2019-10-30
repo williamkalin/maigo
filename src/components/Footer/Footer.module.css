@@ -28,13 +28,7 @@ font-size: 1.3rem;
    text-decoration: none;;
 }
 
-.footer p{
-   position:absolute;
-   top:80%;
-   left:50%;
-   transform:translate(-50%,-50%) ;
-   color:white;
-}
+
 
 @media(max-width: 500px){
    .footer{

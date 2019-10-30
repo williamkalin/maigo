@@ -155,9 +155,6 @@ const changeCurentlySelectedClothes = (state, newselectorvalue) => {
    //filter by color
    if (newSelectors.currentcolor !== "any") {
       newSelectClothes = newSelectClothes.filter(clothing => {
-         // console.log("clothing.color", clothing.color)
-         // console.log("newSelectors.currentcolor", newSelectors.currentcolor)
-         // console.log("color", clothing.color === newSelectors.currentcolor)
          return clothing.color === newSelectors.currentcolor
       });
    }
