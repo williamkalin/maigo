@@ -10,7 +10,7 @@ Since the every single part of the website that can/needs to be hosted (MongoDB,
 ## Built With
 
 * MongoDB
-* Express - here is a link to the express backend [maigoAPI](https://williamkalin.netlify.com/)
+* Express - here is the git for that: [maigoAPI](https://williamkalin.netlify.com/)
 * React
 * Redux
 * Node.js
